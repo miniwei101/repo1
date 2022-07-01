@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0px;
+}
+
+nav{
+    background-color: pink;
+}
+
+.nav-img{
+    width: 50%;
+} 
+
+nav ul{
+    list-style-type: none;
+    display: inline-flex;
+    /* background-image:image('./') */
+}
+
+
+
+.fruit-div{
+    display: block;
+    
+}
+
+.fruit-img{
+    width: 30%;   
+    border-radius: 0.5rem;
+    padding: 0.5vw;
+    box-shadow: 2px 2px 2px 2px lightgray;
+
+}
+
+.fruit-svg{
+    width: 1em;
+
+}
+
+.fruit-font{
+    color:gray;
+}
+
+.theNav{
+    color:gray;
+    font-size: larger;
+    text-decoration:none ;
+    background-color: aqua;
+}
+
+.theDiv{
+    color:pink ;
+}
