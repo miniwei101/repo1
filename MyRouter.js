@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter,Route,Routes,Link } from "react-router-dom";
+import { BrowserRouter,Route,Routes,Link,NavLink } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import AAA from "./AAA";
@@ -9,6 +9,9 @@ import Hi from "./Hi";
 import YourHook from "./YourHook";
 
 const MyRouter=(props)=>{
+    const myStyle={
+        color:'pink'
+    }
     return(
         <BrowserRouter>
         <nav className="theNav">
@@ -17,7 +20,7 @@ const MyRouter=(props)=>{
             <Link to={`/Product/${props.fruit}`}>Product</Link>
             <Link to="/About">About</Link>
             <Link to="/YourHook">YourHook</Link>
-            <Link to="*">Hi</Link>
+            <NavLink to="*" style={({isActive})=> isActive? myStyle:undefined}>Hi</NavLink>
         </nav>
         <p>{props.fruit}</p>
 
